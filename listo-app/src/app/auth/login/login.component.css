@@ -1,0 +1,300 @@
+/* main  */
+
+.img-shadow {
+  /* opacity: 0.5; */
+  /* background-color: rgba(52, 114, 155, 0.5); */
+  background-image: url("../../../assets/login/image.png"); /* Replace with actual image URL */
+  background-size: cover; /* Resize the image to cover the element */
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  /* position: relative; */
+}
+
+form h1 {
+  color: rgba(21, 54, 85, 255);
+}
+
+.card {
+  margin-top: 0;
+  width: 90%;
+  height: 70%;
+  /* padding: 1rem; */
+  /* margin: 1rem; */
+  background-color: rgba(255, 255, 255, 255);
+  border-radius: 20px;
+  box-shadow: 0px 3px 5px #00000045;
+  /* position: relative; */
+  /* z-index: 10; */
+}
+
+.card form {
+  margin: 0 auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.card h1 {
+  text-align: center; /* Center the heading text */
+  margin-bottom: 20px; /* Add some space below the heading */
+}
+
+.card label {
+  display: block; /* Make labels appear on separate lines */
+  margin-bottom: 2px; /* Add space below labels */
+  margin-left: 10px; /* Add space above labels */
+}
+
+.card input[type="email"],
+.card input[type="password"] {
+  width: 100%; /* Make input fields full width */
+  padding: 8px; /* Add padding to input fields */
+
+  border: 1px solid #ccc; /* Add a border to input fields */
+  border-radius: 50px; /* Add rounded corners to input fields */
+  box-sizing: border-box; /* Include padding in input width */
+  margin-bottom: 15px; /* Add space below input fields */
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card button[type="submit"] {
+  margin-top: 1.5rem; /* Add space above submit button */
+  margin-bottom: 2.5rem; /* Add space below submit button */
+  background-color: rgba(16, 73, 99, 255);
+  color: white; /* White text color for submit button */
+  padding: 10px 20px; /* Add padding to submit button */
+  border: none; /* Remove border from submit button */
+  border-radius: 5px; /* Add rounded corners to submit button */
+  cursor: pointer; /* Make submit button look clickable */
+  font-weight: bold; /* Make submit button text bold */
+  width: 100%; /* Make submit button full width */
+  border-radius: 50px; /* Add rounded corners to input fields */
+}
+
+.card button[type="submit"]:hover {
+  background-color: #3e8e41; /* Darker green on hover */
+}
+
+.card a {
+  color: rgba(16, 73, 99, 255);
+  text-decoration: none; /* Remove underline from link */
+  display: flex; /* Make link appear on a new line */
+  justify-content: center; /* Center the link text */
+  justify-align: center;
+  font-weight: bold;
+  margin-: 0 auto;
+  font-size: 0.9rem;
+  width: 100%;
+}
+
+.card a:hover {
+  color: rgba(16, 73, 99, 255);
+}
+
+/* Styles for small screens (less than 600px) */
+@media (max-width: 600px) {
+  .card {
+    height: 60vh;
+    margin-bottom: 6rem;
+    max-width: 85%;
+    min-height: 25rem;
+    max-height: 30rem;
+  }
+
+  .card form {
+    margin-top: 1rem;
+    height: 100%;
+    width: 100%;
+
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+  .label-form {
+    color: #2d95bc;
+    font-size: 0.8rem;
+  }
+  .form-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: rgba(16, 73, 99, 255);
+  }
+
+  .card input[type="email"],
+  .card input[type="password"] {
+    width: 100%; /* Make input fields full width */
+    padding: 8px; /* Add padding to input fields */
+
+    border: 1px solid #ccc; /* Add a border to input fields */
+    border-radius: 50px; /* Add rounded corners to input fields */
+    box-sizing: border-box; /* Include padding in input width */
+    margin-bottom: 15px; /* Add space below input fields */
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+    min-width: 200px;
+  }
+
+  .card button[type="submit"] {
+    margin-top: 1.5rem; /* Add space above submit button */
+    margin-bottom: 2.5rem; /* Add space below submit button */
+    background-color: rgba(16, 73, 99, 255);
+    color: white; /* White text color for submit button */
+    padding: 10px 20px; /* Add padding to submit button */
+    border: none; /* Remove border from submit button */
+    border-radius: 5px; /* Add rounded corners to submit button */
+    cursor: pointer; /* Make submit button look clickable */
+    font-weight: bold; /* Make submit button text bold */
+    width: 100%; /* Make submit button full width */
+    border-radius: 50px; /* Add rounded corners to input fields */
+    min-width: 200px;
+  }
+
+  .slider-section {
+    display: none;
+  }
+}
+
+/* Styles for medium screens (600px to 959px) */
+@media (min-width: 601px) and (max-width: 959px) {
+  .card {
+    background-color: withe;
+    height: 60vh;
+    margin-bottom: 3rem;
+    max-width: 70%;
+    min-height: 25rem;
+    max-height: 28rem;
+    max-width: 34rem;
+  }
+
+  .card form {
+    margin-top: 1rem;
+    height: 100%;
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+  .label-form {
+    color: #2d95bc;
+    font-size: 1rem;
+  }
+  .form-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgba(16, 73, 99, 255);
+  }
+
+  .card input[type="email"],
+  .card input[type="password"] {
+    width: 100%; /* Make input fields full width */
+    padding: 8px; /* Add padding to input fields */
+
+    border: 1px solid #ccc; /* Add a border to input fields */
+    border-radius: 50px; /* Add rounded corners to input fields */
+    box-sizing: border-box; /* Include padding in input width */
+    margin-bottom: 15px; /* Add space below input fields */
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+    min-width: 350px;
+    max-width: 450px;
+  }
+
+  .card button[type="submit"] {
+    margin-top: 1.5rem; /* Add space above submit button */
+    margin-bottom: 2.5rem; /* Add space below submit button */
+    background-color: rgba(16, 73, 99, 255);
+    color: white; /* White text color for submit button */
+    padding: 10px 20px; /* Add padding to submit button */
+    border: none; /* Remove border from submit button */
+    border-radius: 5px; /* Add rounded corners to submit button */
+    cursor: pointer; /* Make submit button look clickable */
+    font-weight: bold; /* Make submit button text bold */
+    width: 100%; /* Make submit button full width */
+    border-radius: 50px; /* Add rounded corners to input fields */
+    min-width: 350px;
+    max-width: 450px;
+  }
+
+  .slider-section {
+    display: none;
+  }
+}
+
+/* Styles for large screens (960px and above) */
+@media (min-width: 960px) {
+  .card {
+    background-color: white;
+    height: 60vh;
+    margin-bottom: 3rem;
+    max-width: 34rem;
+    min-height: 25rem;
+    max-height: 30rem;
+  }
+
+  .card form {
+    margin-top: 1rem;
+    height: 100%;
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+  .label-form {
+    color: #2d95bc;
+    font-size: 1rem;
+  }
+  .form-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgba(16, 73, 99, 255);
+  }
+
+  .card input[type="email"],
+  .card input[type="password"] {
+    width: 100%; /* Make input fields full width */
+    padding: 8px; /* Add padding to input fields */
+
+    border: 1px solid #ccc; /* Add a border to input fields */
+    border-radius: 50px; /* Add rounded corners to input fields */
+    box-sizing: border-box; /* Include padding in input width */
+    margin-bottom: 15px; /* Add space below input fields */
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+    min-width: 250px;
+    max-width: 450px;
+  }
+
+  .card button[type="submit"] {
+    margin-top: 1.5rem; /* Add space above submit button */
+    margin-bottom: 2.5rem; /* Add space below submit button */
+    background-color: rgba(16, 73, 99, 255);
+    color: white; /* White text color for submit button */
+    padding: 10px 20px; /* Add padding to submit button */
+    border: none; /* Remove border from submit button */
+    border-radius: 5px; /* Add rounded corners to submit button */
+    cursor: pointer; /* Make submit button look clickable */
+    font-weight: bold; /* Make submit button text bold */
+    width: 100%; /* Make submit button full width */
+    border-radius: 50px; /* Add rounded corners to input fields */
+    min-width: 250px;
+    max-width: 450px;
+  }
+
+  .slider-section {
+    display: block;
+    margin-top: 12rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    /* background-color: black; */
+  }
+
+  
+}

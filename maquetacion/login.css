@@ -474,9 +474,6 @@ footer {
 
 /* Styles for small screens (less than 600px) */
 @media (max-width: 600px) {
-  main {
-    background-color: yellow;
-  }
 
   .card {
     height: 60vh;
@@ -660,9 +657,6 @@ footer {
 
 /* Styles for medium screens (600px to 959px) */
 @media (min-width: 601px) and (max-width: 959px) {
-  main {
-    background-color: blue;
-  }
 
   .card {
     background-color: withe;
