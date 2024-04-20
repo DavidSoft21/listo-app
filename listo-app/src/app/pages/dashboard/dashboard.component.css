@@ -1,29 +1,39 @@
 /* main  */
 
-.img-shadow {
-  /* opacity: 0.5; */
-  /* background-color: rgba(52, 114, 155, 0.5); */
-  background-image: url("../../../assets/login/image.png"); /* Replace with actual image URL */
-  background-size: cover; /* Resize the image to cover the element */
-  height: 100%;
+.container {
+  /* height: 90vh; */
   width: 100%;
   overflow: hidden;
-  /* position: relative; */
+  background-color: rgba(244, 244, 244, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-form h1 {
+.content {
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* flex-direction: column; */
+  background-color: rgba(0, 244, 0, 0.3);
+  width: 100%;
+  height: 100%;
+}
+
+.content h1 {
   color: rgba(21, 54, 85, 255);
 }
 
 .card {
   margin-top: 0;
-  width: 90%;
-  height: 70%;
+  /* width: 90%; */
+  /* height: 100%; */
   /* padding: 1rem; */
   /* margin: 1rem; */
   background-color: rgba(255, 255, 255, 255);
   border-radius: 20px;
   box-shadow: 0px 3px 5px #00000045;
+  /* position: relative; */
   /* z-index: 10; */
 }
 
@@ -60,7 +70,7 @@ form h1 {
 
 .card button[type="submit"] {
   margin-top: 1.5rem; /* Add space above submit button */
-  margin-bottom: 2rem; /* Add space below submit button */
+  margin-bottom: 2.5rem; /* Add space below submit button */
   background-color: rgba(16, 73, 99, 255);
   color: white; /* White text color for submit button */
   padding: 10px 20px; /* Add padding to submit button */
@@ -94,14 +104,25 @@ form h1 {
 
 /* Styles for small screens (less than 600px) */
 @media (max-width: 600px) {
-  .card {
-    height: 60vh;
-    margin-bottom: 6rem;
-    max-width: 85%;
-    min-height: 25rem;
-    max-height: 30rem;
+  .container {
+    margin: 5px auto;
+    width: 100%;
+    height: calc(100vh - 10rem);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-
+  .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: withe;
+    margin: 0.5rem;
+    /* margin-bottom: 1rem; */
+    max-width: 30rem;
+    min-height: 40rem;
+  }
   .card form {
     margin-top: 1rem;
     height: 100%;
@@ -159,14 +180,24 @@ form h1 {
 
 /* Styles for medium screens (600px to 959px) */
 @media (min-width: 601px) and (max-width: 959px) {
+  .container {
+    margin: 10px auto;
+    width: 100%;
+    height: calc(100vh - 7.5rem);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: withe;
-    height: 60vh;
-    margin-bottom: 3rem;
-    max-width: 70%;
-    min-height: 25rem;
-    max-height: 28rem;
-    max-width: 34rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    max-width: 35rem;
+    min-height: 30rem;
   }
 
   .card form {
@@ -227,15 +258,25 @@ form h1 {
 
 /* Styles for large screens (960px and above) */
 @media (min-width: 960px) {
-  .card {
-    background-color: white;
-    height: 60vh;
-    margin-bottom: 3rem;
-    max-width: 34rem;
-    min-height: 25rem;
-    max-height: 30rem;
+  .container {
+    margin: 10px auto;
+    width: 100%;
+    height: calc(100vh - 7.5rem);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-
+  .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: withe;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    min-width: 59rem;
+    min-height: 30rem;
+  }
   .card form {
     margin-top: 1rem;
     height: 100%;

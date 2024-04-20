@@ -1,7 +1,5 @@
 <app-header></app-header>
-<!-- <app-dasboard></app-dasboard> -->
-<main>
-  <app-login></app-login>
+<main [ngClass]="{ backgroundImg: isBackground }">
+  <router-outlet></router-outlet>
 </main>
-
 <app-footer></app-footer>

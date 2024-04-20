@@ -1,26 +1,46 @@
 <header class="header">
   <nav class="navbar">
-    <div class="logo"><img src="./assets/header/LogoMenu.png" alt="Logo" /></div>
+    <div class="logo">
+      <img src="./assets/header/LogoMenu.png" alt="Logo" />
+    </div>
     <label class="label-hamburger" for="menu-hamburger">&#9776;</label>
     <input type="checkbox" class="menu-hamburger" name="" id="menu-hamburger" />
     <ul class="ul-links">
-      <li class="li-links">
+      <li class="li-links"  *ngIf="!userLoginOn">
         <a href="#" class="link roboto-medium">
           <span class="logo-nav">
             <img src="./assets/header/download.svg" alt="download" /> </span
           >Descargas
         </a>
       </li>
-      <li class="li-links">
+      <li class="li-links"  *ngIf="!userLoginOn">
         <a href="#" class="link roboto-medium">
-          <span class="logo-nav"> <img src="./assets/header/finance.svg" alt="finance" /> </span
+          <span class="logo-nav">
+            <img src="./assets/header/finance.svg" alt="finance" /> </span
           >Financiero
         </a>
       </li>
-      <li class="li-links">
+      <li class="li-links"  *ngIf="!userLoginOn">
         <a href="#" class="link roboto-medium">
-          <span class="logo-nav"> <img src="./assets/header/support.svg" alt="support" /> </span
+          <span class="logo-nav">
+            <img src="./assets/header/support.svg" alt="support" /> </span
           >Soporte
+        </a>
+      </li>
+
+      <li class="li-links"  *ngIf="!userLoginOn">
+        <a [routerLink]="['/login']" class="link roboto-medium">
+          <span class="logo-nav">
+            <img src="./assets/header/login.svg" alt="login" /> </span
+          >Login
+        </a>
+      </li>
+
+      <li class="li-links" *ngIf="userLoginOn">
+        <a [routerLink]="['/logout']" class="link roboto-medium">
+          <span class="logo-nav">
+            <img src="./assets/header/logout.svg" alt="logout" /> </span
+          >Cerrar Sesion
         </a>
       </li>
     </ul>

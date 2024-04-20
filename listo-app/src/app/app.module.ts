@@ -6,9 +6,10 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { SliderComponent } from './shared/slider/slider.component';
-import { DasboardComponent } from './pages/dasboard/dasboard.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { LoginComponent } from './auth/login/login.component';
 import { NgImageSliderModule } from 'ng-image-slider';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,13 +17,14 @@ import { NgImageSliderModule } from 'ng-image-slider';
     HeaderComponent,
     FooterComponent,
     SliderComponent,
-    DasboardComponent,
+    DashboardComponent,
     LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgImageSliderModule
+    NgImageSliderModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
